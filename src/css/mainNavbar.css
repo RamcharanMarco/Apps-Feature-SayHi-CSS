@@ -1,0 +1,18 @@
+.mainNavbar{
+    height: 10vh;
+    background-color: azure;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.mainNavbar h1{
+    color: blue;
+}
+
+.mainNavbar div{
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,52 @@
+.signup {
+    background-color: aquamarine;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+ .signup h1 {
+    font-size: 3rem;
+    margin: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  
+ .signup div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+ .signup div input {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid dodgerblue;
+    color: back;
+    font-family: "Lilita One", sans-serif;
+  }
+  
+ .signup div button {
+    width: 300px;
+    height: 40px;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    border: none;
+    font-family: "Lilita One", sans-serif;
+  }
+  
+  .error {
+    min-width: 300px;
+    background-color: red;
+    height: 30px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
