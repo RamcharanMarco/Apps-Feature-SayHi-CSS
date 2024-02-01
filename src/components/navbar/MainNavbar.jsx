@@ -1,11 +1,14 @@
 import '../../css/mainNavbar.css'
+import { Link } from 'react-router-dom'
+
 const MainNavbar = () => {
   return (
     <div className="mainNavbar">
-        <h1>htmeup</h1>
+        <h1>HITMEUP</h1>
         <div className="links">
-          <a href="">login</a>
-          <a href="">signup</a>
+        <Link to='/'>home</Link>
+          <Link to='/login'>login</Link>
+          <Link to='/signup'>signup</Link>
         </div>
     </div>
   )

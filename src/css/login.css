@@ -8,10 +8,11 @@
 }
 
 .login h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 20px;
   font-weight: bold;
   color: white;
+  letter-spacing: 0.2rem;
 }
 
 .login div {
