@@ -1,0 +1,45 @@
+.console{
+    min-height: 90vh;
+    padding: 20px;
+}
+
+.console .heading{
+    margin: 10px;
+    font-size: 3rem;
+}
+
+.console-search{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-bottom: 1px solid black;
+}
+
+.console-search input{
+    width: 400px;
+    padding: 10px;
+}
+
+.console-search button{
+    padding: 10px 20px;
+}
+
+.console .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.console .container .box{
+    padding: 15px;
+    border: 1px solid dodgerblue;
+}
+
+.console .container .box h1{
+    font-size: 2rem;
+}
+
+.console .container .box p{
+    color: gray;
+}
