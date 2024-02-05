@@ -6,6 +6,7 @@ import Home from "../pages/Home";
 import MainLayout from "../components/layouts/MainLayout";
 import Console from "../pages/Console";
 import Form from "../pages/Form";
+import Settings from "../pages/Settings";
 
 const Router = () => {
   return (
@@ -17,6 +18,7 @@ const Router = () => {
           <Route path="/signup" element={<Signup />} />
           <Route path="/console/user_id" element={<Console />} />
           <Route path="/console/user_id/forms/form_id" element={<Form />} />
+          <Route path="/console/user_id/settings" element={<Settings />} />
         </Route>
       </Routes>
     </BrowserRouter>
