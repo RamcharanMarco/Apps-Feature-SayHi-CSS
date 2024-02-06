@@ -1,10 +1,14 @@
+import { useState } from "react";
 import "../css/settings.css";
 import { Link } from "react-router-dom";
+import TwoFactor from "../components/settings/TwoFactor";
 
 const Settings = () => {
+  const [show, setShow] = useState(false);
 
   return (
     <div className="settings">
+      {show ? <TwoFactor onCancel={() => setShow(false)} /> : null}
       <h1 className="settings-heading">Settings</h1>
       <div className="info">
         <h2>ACCOUNT INFO</h2>
@@ -26,9 +30,10 @@ const Settings = () => {
         </div>
         <div className="box">
           <h1>
-            <Link to={`/console/ddd/settings/twofactorauth`}>
+            <button onClick={() => setShow(true)}>
+              {" "}
               Two Factor Authentication
-            </Link>
+            </button>
           </h1>
           <span>{`disabled`}</span>
         </div>
@@ -44,23 +49,19 @@ const Settings = () => {
         <div className="box">
           <h1>
             {" "}
-            <button>
-              download login info
-            </button>
+            <button>download login info</button>
           </h1>
         </div>
         <div className="box">
-          <h1 >delete account</h1>
+          <h1>delete account</h1>
         </div>
-          <div className="box">
-            <h1>delete all forms</h1>
-            <p>forms cannot be deleted once deleted</p>
-            <button>delete form</button>
-          </div>
         <div className="box">
-          <button className="logout">
-            logout
-          </button>
+          <h1>delete all forms</h1>
+          <p>forms cannot be deleted once deleted</p>
+          <button>delete form</button>
+        </div>
+        <div className="box">
+          <button className="logout">logout</button>
         </div>
       </div>
     </div>
