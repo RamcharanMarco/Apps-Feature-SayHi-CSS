@@ -205,3 +205,43 @@
   height: 80%;
   width: 80%;
 }
+
+.home .plans {
+  background-color: green;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home .plans .container {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  gap: 20px;
+  text-align: left;
+}
+
+.home .plans .container .box {
+  background-color: burlywood;
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home .plans .container .box a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.home .plans .container .box .plan-features {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import "../css/home.css";
 import { Link } from "react-router-dom";
+import { FaRegCheckCircle } from "react-icons/fa";
+import { MdOutlineRadioButtonUnchecked } from "react-icons/md";
 
 const Home = () => {
   return (
@@ -12,7 +14,7 @@ const Home = () => {
       </div>
       <div className="free">
         <div className="box-left">
-          <h1>Free Forver</h1>
+          <h1>Essentials</h1>
           <p>
             TRUENDO Essentials is free to use for as long as you like. Sign up
             now without credit card.
@@ -71,6 +73,54 @@ const Home = () => {
         </div>
         <a href="">signup</a>
       </div>
+      <div className="plans">
+        <h1>Our plans</h1>
+        <p>
+          Essentials is free forever.Premium has more features at an affordable
+          porice
+        </p>
+        <div className="container">
+          <div className="box">
+            <h1>Essentials</h1>
+            <h2>Free Forever</h2>
+            <p>
+              Ideal for users who want the simple stuff.Sign up without credit
+              card information
+            </p>
+            <Link to="/signup">Sign up</Link>
+            <ul className="plan-features">
+              <li>1 form</li>
+              <li>choice of 5 form designs</li>
+              <li>choice of custom themes</li>
+              <li>reply emial</li>
+              <li>multiple langauges</li>
+              <li>adavend security</li>
+              <li>multi user</li>
+              <li>insights</li>
+              <li>multiple integration</li>
+            </ul>
+          </div>
+          <div className="box">
+            <h1>Premium</h1>
+            <h2>€99 / domain per year</h2>
+            <p>
+            for those wanting more control over their settings.Safe and secure payment
+            </p>
+            <Link to="/signup">Sign up</Link>
+            <ul className="plan-features">
+              <li><FaRegCheckCircle />1 form</li>
+              <li><MdOutlineRadioButtonUnchecked />choice of 5 form designs</li>
+              <li>choice of custom themes</li>
+              <li>reply emial</li>
+              <li>multiple langauges</li>
+              <li>adavend security</li>
+              <li>multi user</li>
+              <li>insights</li>
+              <li>multiple integration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div className="features">
         <h1>features</h1>
         <div className="container">
@@ -114,7 +164,10 @@ const Home = () => {
           </div>
           <div className="box">
             <h1>Login Database</h1>
-            <p>All your login history is saved, which can then be downloaded in the settings page.</p>
+            <p>
+              All your login history is saved, which can then be downloaded in
+              the settings page.
+            </p>
           </div>
           <div className="box">
             <h1>Multiple Integrations</h1>
