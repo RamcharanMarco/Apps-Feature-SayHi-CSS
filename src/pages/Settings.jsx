@@ -5,10 +5,14 @@ import TwoFactor from "../components/settings/TwoFactor";
 
 const Settings = () => {
   const [show, setShow] = useState(false);
+  const [show2, setShow2] = useState(false);
+
+
 
   return (
     <div className="settings">
       {show ? <TwoFactor onCancel={() => setShow(false)} /> : null}
+      {show2 ? <Premium onCancel={() => setShow(false)} /> : null}
       <h1 className="settings-heading">Settings</h1>
       <div className="info">
         <h2>ACCOUNT INFO</h2>
@@ -34,6 +38,12 @@ const Settings = () => {
               {" "}
               Two Factor Authentication
             </button>
+          </h1>
+          <span>{`disabled`}</span>
+        </div>
+        <div className="box">
+          <h1>
+            <button onClick={() => setShow2(true)}> Upgrade to premum</button>
           </h1>
           <span>{`disabled`}</span>
         </div>
