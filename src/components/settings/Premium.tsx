@@ -21,6 +21,7 @@ const Premium = ({ onCancel }) => {
   return (
     <div className="modal">
       <div className="wizard">
+        <button className="cancel">cancel</button>
         <div className="wizard-top">
           <h1>upgrade package</h1>
         </div>
@@ -34,12 +35,12 @@ const Premium = ({ onCancel }) => {
             <input type="text" placeholder="country" />
           </div>
         ) : page === 2 ? (
-          <div className="wizard-content">
+          <div className="wizard-content wizard-premium">
             <p>billing email</p>
             <input type="text" placeholder="email" />
           </div>
         ) : page === 3 ? (
-          <div className="wizard-content">
+          <div className="wizard-content wizard-premium">
             <p>payment</p>
             <input type="text" placeholder="card no" />
             <input type="text" placeholder="mm/yy/year" />
@@ -75,10 +76,13 @@ const Premium = ({ onCancel }) => {
         ) : null}
 
         <div className="wizard-bottom">
-          <button onClick={() => onCancel()}>cancel</button>
-          <button onClick={() => prev()}>prev</button>
+          {page === 1 ? (
+            <button onClick={() => onCancel()}>cancel</button>
+          ) : page === 5 ? null : (
+            <button onClick={() => prev()}>prev</button>
+          )}
           {page === 5 ? (
-            <button onClick={() => onCancel()}>next</button>
+            <button onClick={() => onCancel()}>done</button>
           ) : (
             <button onClick={() => next()}>next</button>
           )}
