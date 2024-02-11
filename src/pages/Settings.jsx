@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../css/settings.css";
 import { Link } from "react-router-dom";
 import TwoFactor from "../components/settings/TwoFactor";
+import Premium from "../components/settings/Premium";
 
 const Settings = () => {
   const [show, setShow] = useState(false);
@@ -12,7 +13,7 @@ const Settings = () => {
   return (
     <div className="settings">
       {show ? <TwoFactor onCancel={() => setShow(false)} /> : null}
-      {show2 ? <Premium onCancel={() => setShow(false)} /> : null}
+      {show2 ? <Premium onCancel={() => setShow2(false)} /> : null}
       <h1 className="settings-heading">Settings</h1>
       <div className="info">
         <h2>ACCOUNT INFO</h2>
