@@ -7,6 +7,7 @@ import MainLayout from "../components/layouts/MainLayout";
 import Console from "../pages/Console";
 import Form from "../pages/Form";
 import Settings from "../pages/Settings";
+import PasswordResetSendCode from "../pages/PasswordResetSendCode";
 
 const Router = () => {
   return (
@@ -16,6 +17,7 @@ const Router = () => {
           <Route index element={<Home />}></Route>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/pwd/reset/send-code" element={<PasswordResetSendCode />} />
           <Route path="/console/user_id" element={<Console />} />
           <Route path="/console/user_id/forms/form_id" element={<Form />} />
           <Route path="/console/user_id/settings" element={<Settings />} />

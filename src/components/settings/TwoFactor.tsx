@@ -17,5 +17,4 @@ const TwoFactor = ({ onCancel }) => {
     </div>
   );
 };
-
 export default TwoFactor;
