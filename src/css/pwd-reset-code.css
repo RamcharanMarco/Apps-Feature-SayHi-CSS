@@ -1,4 +1,22 @@
-.pwd-reset-code{
-    height: 90vh;
-    background-color: red;
+.pwd-reset-code {
+  height: 90vh;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pwd-reset-code .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pwd-reset-code .content button,
+.pwd-reset-code .content input {
+  width: 300px;
+  height: 35px;
+  padding: 10px;
 }

@@ -10,6 +10,7 @@ const MainNavbar = () => {
           <Link to='/login'>login</Link>
           <Link to='/signup'>signup</Link>
           <Link to='/pwd/reset/send-code'>reset-pwd</Link>
+          <Link to='/pwd/reset'>reset-pwd-page</Link>
         </div>
     </div>
   )
